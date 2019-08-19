@@ -6,7 +6,7 @@ const appStore = observable(
     incCount: () => appStore.count++,
     decCount: () => appStore.count--,
     get countByThree () {
-      return this.count * 3
+      return appStore.count * 3
     }
   },
   {
