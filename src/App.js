@@ -1,14 +1,14 @@
 import React from 'react'
 import { observer } from 'mobx-react'
 
-const App = observer(({ state }) => {
+const App = observer(({ store }) => {
   return (
     <>
-      <h1>Count is {state.count}</h1>
-      <button onClick={state.addCount}>Add</button>
-      <button onClick={state.decCount}>Dec</button>
+      <h1>Count is {store.count}</h1>
+      <button onClick={store.addCount}>Add</button>
+      <button onClick={store.decCount}>Dec</button>
       <div>
-        <h3>Count by Three: {state.countByThree}</h3>
+        <h3>Count by Three: {store.countByThree}</h3>
       </div>
     </>
   )
